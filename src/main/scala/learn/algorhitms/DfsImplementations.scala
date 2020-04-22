@@ -1,6 +1,7 @@
 package learn.algorhitms
 
 import com.sun.xml.internal.xsom.XSWildcard.Union
+import utils.Graph
 
 import scala.collection.mutable
 
@@ -33,7 +34,7 @@ object DfsImplementations {
   }
 
   def main(args: Array[String]): Unit = {
-    val graph = GraphInstanceProvider.createTheGraph()
+    val graph = Graph.createTheGraph()
     dfsUsingStack(graph(4))
   }
 }

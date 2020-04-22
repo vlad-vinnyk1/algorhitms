@@ -1,9 +1,11 @@
-package learn.algorhitms
+package utils
+
+import learn.algorhitms.{Edge, Vertex}
 
 /**
  * @author vvinnyk on 3/27/20.
  */
-object GraphInstanceProvider {
+object Graph {
   def createTheGraph(): Seq[Vertex] = {
     val graph = (0 to 5).map(item => Vertex(item))
     graph(0).edges += Edge(graph(5)) += Edge(graph(2))
